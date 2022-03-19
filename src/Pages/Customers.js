@@ -1,8 +1,10 @@
+import UserList from "../Components/Users/UserList";
 
 function Customers() {
     return (
-        <div className="justify-center items-center text-center">
-            <h1>Customers</h1>
+        <div >
+        <UserList/>
+
         </div>
     )
 }

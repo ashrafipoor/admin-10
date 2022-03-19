@@ -16,20 +16,20 @@ function App() {
         <aside className="w-1/6 float-left  border-r-gray-700 border-r h-screen">
           <SideBar />
         </aside>
-        <main className="w-5/6 float-left h-screen">
+        <main className="w-5/6 float-left h-screen overflow-y-scroll">
           <Header />
 
-
+          <section className='p-6'>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
             <Route path="/customers" element={<Customers />} />
             <Route path="/orders" element={<Orders />} />
           </Routes>
-
-        </main>
-      </div>
-    </BrowserRouter>
+        </section>
+      </main>
+    </div>
+    </BrowserRouter >
   );
 }
 
