@@ -32,6 +32,12 @@ function Menu() {
                     Orders 
                 </Link>
             </li>
+            <li>
+                <Link to="setting">
+                    <OrderIcon fill='currentColor' className='w-5 h-5' />
+                    Setting 
+                </Link>
+            </li>
         </ul>
     )
 }

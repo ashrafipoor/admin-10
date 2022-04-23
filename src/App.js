@@ -9,6 +9,8 @@ import Home from './Pages/Home';
 import Products from './Pages/Products';
 import Customers from './Pages/Customers';
 import Orders from './Pages/Orders';
+import Setting from './Pages/Setting';
+
 function App() {
   return (
     <BrowserRouter>
@@ -25,6 +27,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/customers" element={<Customers />} />
             <Route path="/orders" element={<Orders />} />
+            <Route path="/setting" element={<Setting />} />
           </Routes>
         </section>
       </main>
