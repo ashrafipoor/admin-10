@@ -10,6 +10,8 @@ import Products from './Pages/Products';
 import Customers from './Pages/Customers';
 import Orders from './Pages/Orders';
 import Setting from './Pages/Setting';
+import ReactForm from './Temp/ReactForm';
+import CustomerDetails from './Pages/CustomerDetails';
 
 function App() {
   return (
@@ -22,16 +24,18 @@ function App() {
           <Header />
 
           <section className='p-6'>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/customers" element={<Customers />} />
-            <Route path="/orders" element={<Orders />} />
-            <Route path="/setting" element={<Setting />} />
-          </Routes>
-        </section>
-      </main>
-    </div>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/customers" element={<Customers />} >
+              </Route>
+              <Route path="/customers/details" element={<CustomerDetails />} />
+              <Route path="/orders" element={<Orders />} />
+              <Route path="/setting" element={<ReactForm />} />
+            </Routes>
+          </section>
+        </main>
+      </div>
     </BrowserRouter >
   );
 }

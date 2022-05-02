@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import LoadingRetry from '../../HOCs/LoadingRetry';
-import './UserList.css';
-import UserTable from './UserTable';
+import './index.css';
+import Table from './Table';
 
-function UserList() {
+function Customers() {
 
     const [myClients, setMyClients] = useState([]);
     const [dataStatus, setDataStatus] = useState('loading');
@@ -20,7 +20,6 @@ function UserList() {
             .then(result => {
                 if (result.data) {
                     setMyClients(result.data);
-                    console.log(result.data)
                     setDataStatus('loaded');
                 }
                 else {
@@ -42,9 +41,9 @@ function UserList() {
             status={dataStatus}
             data={myClients}
             retryCallBack={getData}
-            OriginalComponent={UserTable}
+            OriginalComponent={Table}
             />
         </div>
     )
 }
-export default UserList;
+export default Customers;

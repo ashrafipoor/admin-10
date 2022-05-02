@@ -1,8 +1,9 @@
-import UserList from "../Components/Users/UserList";
+import UserList from "../Components/Customers";
 
 function Customers() {
     return (
         <div >
+        
         <UserList/>
 
         </div>

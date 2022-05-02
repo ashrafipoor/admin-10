@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 
 
-function UserListItem(props){
+function ListItem(props){
 
     return(
         
@@ -29,10 +30,10 @@ function UserListItem(props){
             <span className="badge badge-ghost badge-sm">{props.role}</span>
         </td>
         <th>
-            <button className="btn btn-ghost btn-xs">details</button>
+            <Link className="btn btn-ghost btn-xs" to={'details?userid='+props.id}>Detail</Link>
         </th>
     </tr>
 
     )
 }
-export default UserListItem;
+export default ListItem;

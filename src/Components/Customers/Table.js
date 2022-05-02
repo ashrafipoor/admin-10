@@ -1,6 +1,6 @@
-import UserListItem from "./UserListItem";
+import ListItem from "./ListItem";
 
-function UserTable({ data }) {
+function Table({ data }) {
     return (
         <table className="table w-full">
             <thead>
@@ -16,16 +16,17 @@ function UserTable({ data }) {
                 </tr>
             </thead>
             <tbody>
-                {data.map(clientInfo => <UserListItem
+                {data.map(clientInfo => <ListItem
                     key={clientInfo.id}
                     image={process.env.REACT_APP_BASE_URL + clientInfo.attributes.image.data.attributes.url}
                     fullName={clientInfo.attributes.fullName}
                     country={clientInfo.attributes.country}
                     company={clientInfo.attributes.company}
                     role={clientInfo.attributes.role}
+                    id={clientInfo.id}
                 />)}
             </tbody>
         </table>
     )
 }
-export default UserTable;
+export default Table;
