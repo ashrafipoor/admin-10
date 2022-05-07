@@ -30,6 +30,8 @@ function ListItem(props){
             <span className="badge badge-ghost badge-sm">{props.role}</span>
         </td>
         <th>
+            <label htmlFor="deleteModal" className="btn modal-button btn-error" onClick={()=>props.beforDelete(props)}>delete</label>
+
             <Link className="btn btn-ghost btn-xs" to={'details?userid='+props.id}>Detail</Link>
         </th>
     </tr>

@@ -6,7 +6,7 @@ function LoadingRetry({status,data,retryCallBack,OriginalComponent}){
     let result = <Spinner />;
     switch (status) {
         case 'loaded':
-            result =<OriginalComponent data={data}/>
+            result =<OriginalComponent data={data}  retryClick={retryCallBack} />
             break;
         case 'retry':
             result = <Retry retryClick={retryCallBack} />;

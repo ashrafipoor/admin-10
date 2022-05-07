@@ -11,31 +11,31 @@ function Menu() {
             <li>
                 <Link to="/">
                     <HomeIcon fill='currentColor' className='w-5 h-5' />
-                    Home
+                    <span className=" hidden sm:hidden md:block lg:block">Home</span>
                 </Link>
             </li>
             <li>
                 <Link to="customers">
                     <CustomerIcon fill='currentColor' className='w-5 h-5' />
-                    Customer Management
+                   <span className=" hidden sm:hidden md:block lg:block"> Customer Management</span>
                 </Link>
             </li>
             <li>
                 <Link to="products">
                     <StoreIcon fill='currentColor' className='w-5 h-5' />
-                    Product Management
+                    <span className=" hidden sm:hidden md:block lg:block">Product Management</span>
                 </Link>
             </li>
             <li>
                 <Link to="orders">
                     <OrderIcon fill='currentColor' className='w-5 h-5' />
-                    Orders 
+                    <span className=" hidden sm:hidden md:block lg:block">Orders</span> 
                 </Link>
             </li>
             <li>
                 <Link to="setting">
                     <OrderIcon fill='currentColor' className='w-5 h-5' />
-                    Setting 
+                   <span className=" hidden sm:hidden md:block lg:block"> Setting </span>
                 </Link>
             </li>
         </ul>
